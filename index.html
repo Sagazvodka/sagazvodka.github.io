@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Vodka Sagaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagaz Vodka - Premium</title>
+    <style>
+        /* Estilos personalizados - Tema Praia */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo-img {
+            max-width: 200px; /* Ajuste conforme necessário */
+            height: auto;
+        }
+
+        .product-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .product-image {
+            max-width: 300px;
+            margin: 20px auto;
+            border: 3px solid #ffd700;
+            border-radius: 5px;
+        }
+
+        .product-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #ffd700;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Não basta ser melhor, tem que ser SAGAZ</h1>
+    <!-- Cabeçalho com Logo -->
+    <div class="header">
+        <img src="https://i.imgur.com/dZglNdh.png" alt="Sagaz Vodka" class="logo-img">
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="product-container">
+        <h1 class="product-title">Sagaz Vodka - Premium</h1>
+        <img src="https://via.placeholder.com/300x500/ffd700/000000?text=Sagaz+Vodka" alt="Sagaz Vodka" class="product-image">
+        <p class="product-description">
+            Sagaz Vodka é feita com os melhores ingredientes naturais, capturando a essência refrescante do litoral brasileiro. 
+            Perfeita para momentos de celebração à beira-mar.
+        </p>
+        <button class="cta-button">Compre Agora</button>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>&copy; 2023 Sagaz Vodka. Todos os direitos reservados.</p>
+    </div>
 </body>
 </html>
