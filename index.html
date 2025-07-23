@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagaz Vodka</title>
-    <style>
-        /* Estilos personalizados - Tema Praia */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sagaz Vodka</title>
+  <!-- Fonte elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
 
-        .header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px 0;
-            text-align: center;
-        }
+    .header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        .logo-img {
-            max-width: 200px;
-            height: auto;
-        }
+    .logo-img {
+      max-width: 200px;
+      height: auto;
+    }
 
-        .product-container {
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            text-align: center;
-        }
+    .product-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      text-align: center;
+    }
 
-        .product-title {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #ffd700;
-        }
+    .product-title {
+      font-size: 4em;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
 
-        .product-image {
-            max-width: 180px;
-            margin: 20px auto;
-            border: 3px solid #ffd700;
-            border-radius: 5px;
-        }
+    .product-image {
+      max-width: 234px;
+      margin: 20px auto;
+      border: 3px solid #ffd700;
+      border-radius: 5px;
+    }
 
-        .product-description {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+    .product-description {
+      font-size: 1.3em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #ff0000;
+      font-weight: bold;
+    }
 
-        .cta-button {
-            background-color: #ffd700;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .cta-button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-        .cta-button:hover {
-            background-color: #fff;
-        }
+    .cta-button:hover {
+      background-color: #fff;
+    }
 
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function verificarIdade() {
+      alert("Você tem mais de 18 anos?");
+    }
+  </script>
 </head>
 <body>
-    <!-- Cabeçalho com Logo -->
-    <div class="header">
-        <img src="IMG_6365.jpeg" alt="Sagaz Vodka" class="logo-img">
-    </div>
+  <!-- Cabeçalho com Logo -->
+  <div class="header">
+    <img src="IMG_6365.jpeg" alt="Sagaz Vodka" class="logo-img">
+  </div>
 
-    <!-- Conteúdo Principal -->
-    <div class="product-container">
-        <h1 class="product-title">Sagaz Vodka</h1>
-        <img src="PHOTO-2024-10-11-15-39-58.jpeg" alt="Garrafa Sagaz Vodka" class="product-image">
-        <p class="product-description">
-            Não basta ser melhor, tem que ser SAGAZ.
-        </p>
-        <button class="cta-button">Para maiores de 18 anos</button>
-    </div>
+  <!-- Conteúdo Principal -->
+  <div class="product-container">
+    <h1 class="product-title">Sagaz Vodka</h1>
+    <img src="PHOTO-2024-10-11-15-39-58.jpeg" alt="Garrafa Sagaz Vodka" class="product-image">
+    <p class="product-description">
+      Não basta ser melhor, tem que ser SAGAZ.
+    </p>
+    <button class="cta-button" onclick="verificarIdade()">Para maiores de 18 anos</button>
+  </div>
 
-    <!-- Rodapé -->
-    <div class="footer">
-        <p>&copy; 2025 Sagaz Vodka. Todos os direitos reservados.</p>
-    </div>
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>&copy; 2025 Sagaz Vodka. Todos os direitos reservados.</p>
+  </div>
 </body>
 </html>
