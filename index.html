@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <img src="https://ibb.co/zWQ52T0Z" alt="Sagaz Vodka" class="logo-img">
+  <title>Sagaz Vodka</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body, html {
@@ -24,6 +24,8 @@
     .logo-img {
       max-width: 200px;
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     .product-container {
@@ -45,10 +47,11 @@
     }
 
     .product-image {
-      max-width: 234px;
+      max-width: 300px;
       margin: 20px auto;
       border: 3px solid #ffd700;
       border-radius: 5px;
+      display: block;
     }
 
     .product-description {
@@ -83,6 +86,14 @@
       bottom: 0;
       width: 100%;
     }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
   </style>
   <script>
     function verificarIdade() {
@@ -93,13 +104,18 @@
 <body>
   <!-- Cabeçalho com Logo -->
   <div class="header">
-    title>Sagaz Vodka</title>
-  <!-- Fonte elegante -->  </div>
+    <img src="https://i.ibb.co/Cpmt93TQ/LOGO-SAGAZ.png" alt="Sagaz Vodka" class="logo-img">
+  </div>
 
   <!-- Conteúdo Principal -->
   <div class="product-container">
     <h1 class="product-title">Sagaz Vodka</h1>
-    <img src="https://ibb.co/zWQ52T0Z" alt="Garrafa Sagaz Vodka" class="product-image">
+    
+    <div class="image-container">
+      <img src="https://i.ibb.co/Cpmt93TQ/LOGO-SAGAZ.png" alt="Logo Sagaz" class="product-image">
+      <img src="https://i.ibb.co/274tJsfm/PHOTO-2024-12-03-10-15-10.jpg" alt="Produto Sagaz" class="product-image">
+    </div>
+    
     <p class="product-description">
       Não basta ser melhor, tem que ser SAGAZ.
     </p>
