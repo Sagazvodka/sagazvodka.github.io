@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sagaz Vodka</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body, html {
       margin: 0;
@@ -21,6 +22,13 @@
       text-align: center;
     }
 
+    .logo-img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
     .product-container {
       max-width: 1200px;
       margin: 50px auto;
@@ -31,7 +39,7 @@
     }
 
     .product-image {
-      max-width: 600px; /* Tamanho dobrado (original era 300px) */
+      max-width: 600px;
       width: 100%;
       margin: 20px auto;
       border: 3px solid #ffd700;
@@ -47,20 +55,28 @@
       font-weight: bold;
     }
 
-    .cta-button {
-      background-color: #ffd700;
-      color: #000;
-      padding: 10px 20px;
+    .instagram-btn {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white;
+      padding: 12px 25px;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
       font-size: 1.1em;
       cursor: pointer;
-      transition: background-color 0.3s;
-      font-family: 'Times New Roman', Times, serif;
+      transition: transform 0.3s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .cta-button:hover {
-      background-color: #fff;
+    .instagram-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .instagram-btn i {
+      margin-right: 8px;
+      font-size: 1.2em;
     }
 
     .footer {
@@ -72,31 +88,30 @@
       width: 100%;
     }
   </style>
-  <script>
-    function verificarIdade() {
-      alert("Você tem mais de 18 anos?");
-    }
-  </script>
 </head>
 <body>
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho com Logo -->
   <div class="header">
-    <!-- Removida a logo conforme solicitado -->
+    <img src="https://i.ibb.co/Cpmt93TQ/LOGO-SAGAZ.png" alt="Sagaz Vodka" class="logo-img">
   </div>
 
   <!-- Conteúdo Principal -->
   <div class="product-container">
-    <!-- Removido o título "Sagaz Vodka" em dourado -->
     <img src="https://i.ibb.co/274tJsfm/PHOTO-2024-12-03-10-15-10.jpg" alt="Produto Sagaz" class="product-image">
     <p class="product-description">
       Não basta ser melhor, tem que ser SAGAZ.
     </p>
-    <button class="cta-button" onclick="verificarIdade()">Para maiores de 18 anos</button>
+    <a href="https://www.instagram.com/sagazvodka" target="_blank" class="instagram-btn">
+      <i class="fab fa-instagram"></i> @sagazvodka
+    </a>
   </div>
 
   <!-- Rodapé -->
   <div class="footer">
     <p>&copy; 2025 Sagaz Vodka. Todos os direitos reservados.</p>
   </div>
+
+  <!-- Font Awesome para o ícone do Instagram -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
